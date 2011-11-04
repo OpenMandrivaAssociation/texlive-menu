@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/menu
+# catalog-date 2009-03-06 22:55:22 +0100
+# catalog-license other-free
+# catalog-version 0.994
 Name:		texlive-menu
 Version:	0.994
 Release:	1
@@ -43,6 +49,7 @@ a path through a program's menu.
 #- source
 %doc %{_texmfdistdir}/source/latex/menu/menu.dtx
 %doc %{_texmfdistdir}/source/latex/menu/menu.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,3 +60,5 @@ a path through a program's menu.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
