@@ -6,7 +6,7 @@
 # catalog-version 0.994
 Name:		texlive-menu
 Version:	0.994
-Release:	8
+Release:	9
 Summary:	Typesetting menus
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/menu
